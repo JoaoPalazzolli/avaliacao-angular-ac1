@@ -12,6 +12,6 @@ export class ConversorTemperaturaComponent {
 
   converter(){
     this.fahrenheit = (this.celcius * 9 / 5) + 32;
-    this.kelvin = this.celcius + 273.15;
+    this.kelvin = Number(this.celcius) + 273.15;
   }
 }
