@@ -1,0 +1,8 @@
+<label for="celcius">Graus Celsius:</label>
+<input type="text" [(ngModel)]="celcius" placeholder="Digite o grau celcius" class="form-control">
+<br>
+
+<p>Fahrenheit (F): {{fahrenheit}}</p>
+<p>Kelvin (K): {{kelvin}}</p>
+
+<button class="btn btn-primary" (click)="converter()">Converter</button>

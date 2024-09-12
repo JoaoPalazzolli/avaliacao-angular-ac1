@@ -1,0 +1,25 @@
+<label for="nome">Nome: </label>
+<input type="text" [(ngModel)]="nome" placeholder="Digite seu nome" class="form-control">
+<br>
+<label for="idade">idade: </label>
+<input type="number" [(ngModel)]="idade" placeholder="Digite sua idade" class="form-control">
+<br>
+<label for="valorAutomovel">Valor do Automóvel:</label>
+<input type="number" [(ngModel)]="valorAutomovel" placeholder="Digite o valor do automóvel" class="form-control">
+<br>
+
+<label for="sexo">Sexo:</label><br>
+<label for="sexo">
+    <input type="radio" [(ngModel)]="sexo" value="masculino">
+    Masculino
+</label>
+<br>
+<label for="sexo">
+    <input type="radio" [(ngModel)]="sexo" value="feminino">
+    Feminino
+</label>
+<br>
+<br>
+<p>Valor da Apólice: {{valorApolice}}</p>
+
+<button class="btn btn-primary" (click)="calcularApolice()">Calcular Apólice</button>

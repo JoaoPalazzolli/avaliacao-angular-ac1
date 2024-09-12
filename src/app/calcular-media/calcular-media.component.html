@@ -1,0 +1,16 @@
+<label for="ac1">AC1:</label>
+<input type="number" [(ngModel)]="ac1" placeholder="Digite sua AC1" class="form-control">
+<br>
+<label for="ac2">AC2:</label>
+<input type="number" [(ngModel)]="ac2" placeholder="Digite sua AC2" class="form-control">
+<br>
+<label for="ag">AG:</label>
+<input type="number" [(ngModel)]="ag" placeholder="Digite sua AG" class="form-control">
+<br>
+<label for="af">AF:</label>
+<input type="number" [(ngModel)]="af" placeholder="Digite sua AF" class="form-control">
+
+<p><br>Média: {{media}}</p>
+<p>Status: {{status}}</p>
+
+<button class="btn btn-primary" (click)="calcularMedia()">Calcular Média</button>
